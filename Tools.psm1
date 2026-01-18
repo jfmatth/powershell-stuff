@@ -88,7 +88,6 @@ function build {
     Write-Host "Building main image $ImageName"
     podman build `
         --file Dockerfile `
-        --no-cache `
         --tag "$($imageName):$version" `
         --tag "$($ImageName):latest" `
         .
